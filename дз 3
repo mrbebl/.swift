@@ -1,0 +1,111 @@
+import UIKit
+
+import UIKit
+ 
+// строки
+var str1 = "String"
+var str2: String = "String2"
+
+var a = ""
+var b = String ()
+// () двойные скобки  говорят об инициализации
+
+a = "Hello"
+b = "World"
+
+// конкотонация строк
+
+print(a + " " + b)
+
+// интерполяция строк
+var nuber = 10
+print("nuber is = \(nuber)")
+
+//ar char: Character = "x"
+//str1 + String(char)
+
+//str1.append(char)
+
+// цикл for итерация
+
+//for c in "Hello max"{
+//    print(c)
+//}
+
+a += b
+
+var peremenayaString = "Hello"
+
+//peremenayaString.count
+
+peremenayaString.hasPrefix("M")
+peremenayaString.hasSuffix("o")
+
+if peremenayaString.isEmpty{
+    print("is Empty")
+}else{
+    print("no Empty")
+}
+
+// дз 3
+// попрактиковаться
+
+var peremenayaString1 = "Elisey"
+peremenayaString1.count
+// .count - скажет сколько букв в слове
+
+peremenayaString1.hasPrefix("I")
+peremenayaString1.hasPrefix("E")
+peremenayaString1.hasSuffix("u")
+peremenayaString1.hasSuffix("y")
+
+var nameFriend = "Vologda"
+nameFriend.count
+
+nameFriend.hasSuffix("V")
+nameFriend.hasPrefix("V")
+nameFriend.hasSuffix("a")
+
+if peremenayaString1.isEmpty{
+    print("Привет Елисей")
+}else{
+    print("Пока Елисей")
+}
+// isEmpty - если пустая(epmpty - пустой), то распечатай вот это
+
+var strFood = "Apple"
+
+if strFood.isEmpty{
+    print("Я хочу банан")
+}else{
+    print("Я хочу яблоко")
+}
+
+// распечатать каждую букву своего имени с помощью for in
+
+for i in "Elisey"{
+    print(i)
+}
+
+for s in "Matvey"{
+    print(s)
+}
+
+for a in "Alexander"{
+    print(a)
+}
+
+// прибавить к имени фамилию
+
+var name = "Elisey"
+var surname = "Belkov"
+
+print(name + " " + surname)
+
+// прибавить свой возраст при помощи интерполяции
+
+var age = 18
+
+//print("name + surname + \(age)") говнище какое то
+
+//"hello there" распечатать без пробела , а потом задом наперед
