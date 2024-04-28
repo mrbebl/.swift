@@ -1,0 +1,112 @@
+import UIKit
+
+var greeting = "Hello, playground"
+
+//// базовые типы
+//
+//var peremennaya = 18
+//let constant = 2
+//
+//var a1 = 10
+//// создаем оператор var с именем a1 и присваиваем ей значение 10
+//
+//var a0: Int = 10
+//
+//var a2: Double = 2.5
+//var a3: Float = 2.6
+//
+//var a4 = 55
+//// a: не обязательно писать
+//
+////var c = a1 + a2 так нельзя, нужно сделать приведение типов
+//
+//var c =  a1 + Int(a2 )
+//
+//let i = 5 + 5.5
+//// тут программа сама определила тип данных у числе и спокойно посчитала, в первом
+//// случае так не получилось сделать, так как я изначально выбрал тип данных для переменных a1 a2 a3
+//
+//typealias myNumber = Int
+//var chislo: myNumber = 10
+// тут мы с помощью команды typealias создали собственное число
+
+//print(chislo)
+//print("privet")
+//
+//var boolvalue: Bool = true
+//
+//if boolvalue == true{
+//    print("hello")
+//}else{
+//    print("Bay")
+//}
+
+
+var a1: Int = 19
+var a2: Float = 4.5
+var a3: Double = 2.6
+
+var a4 = 22
+var a5 = 4.6
+var a6 = 4.4
+
+var c = a2 + Float(a1)
+var e = a4 + Int(a5)
+
+typealias myNuber = Int
+var nuber: myNuber = 123
+
+print(nuber)
+
+var age = true
+var age2 = false
+
+if age == true{
+    print("Elisey hello")
+}else{
+    ("Elisey bay")
+}
+
+19 + 1023
+1042 - 1032
+1111 / 4
+277 / 3
+92 + 12345
+
+//Целые числа - это числа без дробной части
+// Числовой литерал это числа (целые, с плавающей точкой или числа с перфиксным оператором (+) (-)
+// 123 , 12.5 , -20 , +45
+
+// Int8, Uint8 , Int16, Uint16 , Int32 , Uint32 , Int64 , Uint 64
+
+// юникод скаляры это - конструкции из символов \u{} заключенные между фигурными скобками
+//  я что тогда не понял, что сейчас
+
+
+var t = 10
+var d = 2.5
+
+var h = t + Int(d)
+var j = d + Double(t)
+
+//Хешируемый тип данных это тип данных  для котрого может быть расчитан специальный цифровой код
+// а сопоставимые это те, значения котрых могут быть можно сопоставит при м=помощи операторв сравнения
+// хеш это цифровой код
+
+let intForHash = 23
+intForHash.hashValue
+
+let boolForHash = false
+boolForHash.hashValue
+
+let stringHello = "Привет"
+stringHello.hashValue
+
+let intAge = 18
+intAge.hashValue
+
+let boolI = true
+boolI.hashValue
+
+//Double - 32 битное число с плавающей точкой (до 6 знков после запятой) ,
+//а Float - 64 битное число с плавающей точкой (до 15 знаков после запятой)
