@@ -1,0 +1,43 @@
+import UIKit
+
+var greeting = "Hello, playground"
+
+var name1 = "Alex"
+name1 = "Ivan"
+
+name1
+
+var name2 = "Oleg"
+name2 = "John"
+
+name2
+
+print(name1)
+print(name2)
+
+print(name1 + " " + name2)
+
+var myName = "Elisey"
+
+let name = "Nikita"
+ 
+var age = 19
+
+var age2 = 18
+
+print(myName)
+print(name)
+
+print(age + age2)
+
+var nameVova = "Vova"
+var ageVova = 18
+
+print(nameVova)
+
+var nameSavely = "Savely"
+var ageSalely = 22
+
+print(nameSavely)
+
+print(nameVova + " " + nameSavely )
