@@ -1,0 +1,160 @@
+import UIKit
+
+var str1 = "String"
+var syr2: String = "String2"
+
+var a = ""
+var b = String()
+
+a = "Hello"
+b = "World"
+print(a + b)
+
+var number = 10
+print("nuber \(number)")
+
+var char: Character = "X"
+
+//str1 + String(char)
+
+str1.append(char)
+
+var peremString = ""
+if peremString.isEmpty {
+    print("is empty")
+} else {
+    print("No empty")
+}
+
+var peremString2 = "hello"
+//peremString2.characters.count
+
+peremString.hasPrefix("h")
+peremString.hasSuffix("o")
+ 
+// многострочные литералы
+
+// var string = "привет" мир"" так не получится сделать
+var string = "привет \"мир\"" //экранировали
+var string1 = "привет \nмир" // \n - используется для переноса строки
+
+var string2 = """
+hello
+world
+"""
+// это многосторчный литерал """ должны начинаться и заканчиваться на отдельной строке текста может быть сколько угодно
+
+var string3 = """
+Елисей \
+привет
+"""
+// тут я использовал (\) для того чтобы весть код был в одной строке
+
+let yahaBala = "\u{123}"
+let el = "\u{666}"
+let war = "\u{2665}"
+let xz = "\u{1F496}"
+
+var variableString = "Елисей"
+variableString += " Кушает куличик"
+variableString += " и пьет чай"
+
+for character in variableString{
+    print(character)
+}
+        
+let catCharacters: [Character] = ["C", "a", "t", "!"]
+let catString = String(catCharacters)
+print(catString)
+//Значения типа String могут быть созданы путем передачи массива типа [Character] в инициализатор
+
+// можно добавить значения Character к переменной типа String используя метод String append:
+
+var peremStr = "Hello Elisey"
+let peremChar: Character = "!"
+peremStr.append(peremChar)
+
+                                                             // дз
+
+// написать примеры многострочных литералов
+var text = """
+привет как у тебя дела ?
+"""
+
+var text2 = """
+сегодня плохая погода
+"""
+
+// распечатать каждую букву своего имени с помощью for in
+
+for character in "Elisey" {
+    print(character)
+}
+
+// прибавить к имени фамилию
+
+var myName = "Elisey"
+var mySurename = "Belkov"
+
+myName + " " +  mySurename
+
+// Прибавить свой возраст
+
+var имя = "Елисей"
+var фам = "Белков"
+var возраст = 19
+
+ "меня зовут \(имя) \(фам) мне \(возраст) лет"
+
+//  "hello there!” удалите лишний пробел после слова "hello" 8) Теперь распечатайте "hello there! задом наперед
+
+var text3 = "hello there"
+var deleteSpaces = text3.replacingOccurrences(of: " ", with: "")
+print(deleteSpaces)
+
+// распечатать задом наперед
+
+var reservedText = String(text3.reversed())
+print(reservedText)
+
+// 9 Проверьте есть ли в "hello there! буква "o"
+
+text3.contains("o")
+
+// 10 "23:51:01" разделите эту строку на 3 элемента и распечатайте каждый элемент в формате Int.
+
+var str = "23:51:01"
+
+var components = str.components(separatedBy: ":")
+for component in components {
+    if var intValue = Int(component) {
+        print(intValue)
+    }
+}
+
+// метод components(separatedBy:) разделил строку по разделителю
+
+// 11 Отформатируйте Float 3.14159 что бы стало 3.14
+
+var floatValue = 3.14159
+var formatedFloat = String(format: "%.2f", floatValue)
+print(formatedFloat)
+
+// метод String(format:)
+
+// 12 AaBbCc" сделате все буквы большие
+
+var differentNubers = "AaBbCc"
+var uppercased = differentNubers.uppercased()
+print(uppercased)
+// метод uppercased()
+
+// 13  "AaBbCc" удалите первую и последнюю букву."
+
+var AaBbCc = "AaBbCc"
+AaBbCc.removeFirst()
+AaBbCc.removeLast()
+
+// добавить ! "AaBbCc"
+
+AaBbCc.insert("!", at: AaBbCc.endIndex)
